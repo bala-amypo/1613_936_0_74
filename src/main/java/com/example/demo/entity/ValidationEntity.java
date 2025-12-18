@@ -20,6 +20,13 @@ public class ValidationEntity{
     @NotNull(message="Password is mandatory")
     private String password;
     @Max(20)
+    @
 
     private Integer age;
+      public ValidationEntity(Long id,String username,String email,String password){
+        this.id=id;
+        this.username=username;
+        this.email=email;
+        this.password=password;
+    }
 }
