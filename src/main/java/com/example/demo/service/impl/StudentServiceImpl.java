@@ -31,10 +31,9 @@ public class StudentServiceImpl implements StudentService{
      if(student.existById(id)){
      entity.setId(id);
      return student.save(stu);
-     
+     }
      else{
          return null;
      }
-
      }
 }
