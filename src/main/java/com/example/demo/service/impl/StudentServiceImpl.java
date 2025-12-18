@@ -23,5 +23,7 @@ public class StudentServiceImpl implements StudentService{
           return "Deleted Sucessfully!";
      }
      @Override
-     public Student
+     public StudentEntity findData(int id){
+          
+     }
 }
