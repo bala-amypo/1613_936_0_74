@@ -4,5 +4,6 @@ import com.example.demo.entity.StudentEntity;
 public interface StudentService{
     StudentEntity postData(StudentEntity stu);
     List<StudentEntity>getAllData();
-    Str
+    String deleteData(int id);
+    StudentEntity findData(int id);
 }
