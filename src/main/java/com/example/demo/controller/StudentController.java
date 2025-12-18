@@ -19,4 +19,14 @@ public class StudentController{
     public List<StudentEntity> getAllData(){
         return ser.getAllData();
     }
+    @DeleteMapping("/delete/{id}")
+    public String deleteVal(@PathVariable int id){
+        return ser.deleteData(id);
+    }
+    @GetMapping("/getData/{id}")
+    public StudentEntity FindVal(@PathVariable int id){
+        return ser.findData(id);
+    }
+    @PutMApping("/put/{id}")
+    public StudentEntity UpdateData(@PathVariable)
 }
