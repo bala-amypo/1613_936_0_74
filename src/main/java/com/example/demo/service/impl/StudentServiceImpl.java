@@ -18,7 +18,7 @@ public class StudentServiceImpl implements StudentService{
         return student.findAll();
      }
      @Override
-     public String deleteData(@PathVariable int id){
+     public String deleteData(int id){
           student.deleteById(id);
           return "Deleted Sucessfully!";
      }
@@ -27,7 +27,7 @@ public class StudentServiceImpl implements StudentService{
           return student.findById(id).orElse(null);
      }
      @Override
-     public StudentEntity updateData(int id,StringEntity s){
+     public StudentEntity updateData(int id,StudentEntity s){
      if(student.existById(id)){
      entity.setId(id);
      return student.save(stu);
