@@ -52,7 +52,7 @@ public class ValidationEntity{
     public Long getId(){
         return id;
     }
-    public ValidationEntity()[
+    public ValidationEntity(){
         
-    ]
+    }
 }
