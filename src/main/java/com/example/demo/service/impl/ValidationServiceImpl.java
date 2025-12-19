@@ -5,7 +5,7 @@ import com.example.demo.repository.ValidationRepo;
 import com.example.demo.entity.ValidationEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.example.demo.exception.ValidationException;
+import com.example.demo.exception.ValidationException; 
 @Service
 public class ValidationServiceImpl implements ValidationService{
      @Autowired ValidationRepo dent;
